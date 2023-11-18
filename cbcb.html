@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harley Davidson - Fashion Collection</title>
+  <style>
+    /* Styles for the header */
+    header {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    /* Styles for the main section */
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 20px;
+    }
+    section {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid black;
+      width: 300px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+    .product-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: white;
+      color: black;
+    }
+    /* Styles for the footer */
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Harley Davidson - Fashion Collection</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Accessories</a>
+      <a href="#">Sale</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <img src="https://via.placeholder.com/200" alt="Product Image" class="product-img">
+      <h2>Men's Leather Jacket</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor euismod nunc eu condimentum.</p>
+      <button class="buy-now">Buy Now</button>
+    </section>
+    <section>
+      <img src="https://via.placeholder.com/200" alt="Product Image" class="product-img">
+      <h2>Women's Leather Jacket</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor euismod nunc eu condimentum.</p>
+      <button class="buy-now">Buy Now</button>
+    </section>
+    <section>
+      <img src="https://via.placeholder.com/200" alt="Product Image" class="product-img">
+      <h2>Leather Gloves</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor euismod nunc eu condimentum.</p>
+      <button class="buy-now">Buy Now</button>
+    </section>
+    <section>
+      <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor euismod nunc eu condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer commodo nunc quis libero pharetra, a scelerisque magna consectetur. Morbi malesuada lobortis lacus, vel tincidunt orci euismod a. In eu massa justo. Donec sed elementum metus. Suspendisse bibendum, mauris ac rhoncus porttitor, mi quam finibus justo, ut iaculis ex urna eu nulla.</p>
+</section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Harley Davidson Fashion. All rights reserved.</p>
+  </footer>
+  <script>
+    // Add click event listener to Buy Now buttons
+    const buyButtons = document.querySelectorAll('.buy-now');
+    buyButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        alert('Item added to cart!');
+      });
+    });
+  </script>
+</body>
+</html>
